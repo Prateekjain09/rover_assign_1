@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+   <node pkg="rover_assign_1" type="coordinate" name="coordinate" output="screen"/>
+   
+   <node pkg="rosbag" type="play" name="rosbag_play" output="screen" required="true"
+         args="--loop /home/prateek/tutorial_ws1/src/rover_assign_1/image.bag"/>               <!--change path to the rosbag "image.bag"-->
+</launch>
